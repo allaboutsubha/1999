@@ -31,7 +31,7 @@ jobs:
           echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/app/key.properties
 
       # ----------------------------------------------------
-      # প্লে স্টোরের জন্য AAB বিল্ড করার অংশ (বর্তমানে চালু আছে)
+      # প্লে স্টোরের জন্য AAB বিল্ড করার অংশ 
       # ----------------------------------------------------
       - name: Build App Bundle (AAB)
         run: flutter build appbundle --release
@@ -41,16 +41,3 @@ jobs:
         with:
           name: release-aab
           path: build/app/outputs/bundle/release/app-release.aab
-
-
-      # ----------------------------------------------------
-      # APK বিল্ড করার অংশটি কমেন্ট করে রাখা হলো 
-      # ----------------------------------------------------
-      # - name: Build APK for Testing
-      #   run: flutter build apk --release
-
-      # - name: Upload APK Artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: release-aab
-      #     path: build/app/outputs/flutter-apk/app-release.apk
