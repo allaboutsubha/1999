@@ -25,24 +25,24 @@ jobs:
       # ১. যদি AAB ফাইল বানাতে চান, নিচের কোডের সামনের # তুলে দিন 
       # এবং APK এর অংশটুকু কমেন্ট করে দিন
       # ----------------------------------------------------
-      # - name: Build App Bundle (AAB)
-      #   run: flutter build appbundle --release
+       - name: Build App Bundle (AAB)
+         run: flutter build appbundle --release
 
-      # - name: Upload AAB Artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: release-aab
-      #     path: build/app/outputs/bundle/release/app-release.aab
+       - name: Upload AAB Artifact
+         uses: actions/upload-artifact@v4
+         with:
+           name: release-aab
+           path: build/app/outputs/bundle/release/app-release.aab
 
 
       # ----------------------------------------------------
       # ২. বর্তমানে APK বিল্ড করার অংশটি চালু আছে (টেস্ট করার জন্য)
       # ----------------------------------------------------
-      - name: Build APK for Testing
-        run: flutter build apk --release
+      #- name: Build APK for Testing
+        #run: flutter build apk --release
 
-      - name: Upload APK Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+#      - name: Upload APK Artifact
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: release-apk
+#          path: build/app/outputs/flutter-apk/app-release.apk
