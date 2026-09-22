@@ -79,7 +79,7 @@ class _SplitPeWebViewScreenState extends State<SplitPeWebViewScreen> {
           },
         ),
       )
-      ..loadRequest(Uri.parse('https://splitpe-lovat.vercel.app/'));
+      ..loadRequest(Uri.parse('https://1999-one.vercel.app/'));
 
     if (_controller.platform is AndroidWebViewController) {
       final AndroidWebViewController androidController =
