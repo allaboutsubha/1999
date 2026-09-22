@@ -23,10 +23,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    // ১. এখানে signingConfigs যোগ করতে হবে
+    // সাইনিং কনফিগারেশন (ডুপ্লিকেট ব্লক সরিয়ে একটি সঠিক ও নিরাপদ ব্লক রাখা হলো)
     signingConfigs {
         create("release") {
-            if (keystorePropertiesFile.exists()) {
+            if (keystorePropertiesFile.exists() && keystoreProperties.getProperty("storeFile") != null) {
                 keyAlias = keystoreProperties.getProperty("keyAlias")
                 keyPassword = keystoreProperties.getProperty("keyPassword")
                 storeFile = file(keystoreProperties.getProperty("storeFile"))
@@ -45,10 +45,10 @@ android {
 
     buildTypes {
         release {
-            // ২. এখানে debug এর বদলে release সাইনিং কনফিগার বসাতে হবে
+            // রিলিজ সাইনিং কনফিগার বসানো হলো
             signingConfig = signingConfigs.getByName("release")
             
-            // রিলিজ বিল্ড ছোট ও সিকিউর করার জন্য মিনিফাই অন রাখতে পারো (অপশনাল)
+            // রিলিজ বিল্ড ছোট ও সিকিউর করার জন্য মিনিফাই অন রাখা হয়েছে
             isMinifyEnabled = true
             isShrinkResources = true
         }
