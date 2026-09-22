@@ -1,0 +1,525 @@
+App Icon
+========================================
+Create a final Google Play Store app icon for the fintech utility app “1999”.
+
+Use the established “1999” brand identity:
+- Deep navy background
+- Electric blue segmented payment blocks
+- Bright cyan/green split arrow
+- Bold geometric “1999” typography
+- Minimal fintech aesthetic
+
+The icon must communicate:
+Large amount → split into multiple payment amounts → maximum 1999 per transaction.
+
+Use the visual concept:
+1999
+1999
+291
+→
+
+However, simplify the composition so it remains extremely clear at small sizes.
+
+Design requirements:
+- Premium fintech startup quality
+- Clean flat vector design
+- Strong contrast
+- Bold geometric shapes
+- Excellent negative space
+- No unnecessary details
+- No coins
+- No currency notes
+- No QR code
+- No generic banking symbol
+- No phone mockup
+- No shadows
+- No 3D
+- No complex gradients
+
+Create a square app icon composition suitable for Google Play Store.
+
+The icon should look highly recognizable at 48px and 32px.
+
+No presentation board.
+No multiple logo variations.
+Only the final app icon.
+
+=========================================================
+Feature Graphic — 1024×500
+=========================================================
+Create a premium Google Play Store FEATURE GRAPHIC for a fintech utility app named “1999”.
+
+CANVAS:
+1024 × 500 pixels
+Wide horizontal composition.
+
+CORE MESSAGE:
+Split large payment amounts into smaller amounts capped at ₹1,999.
+
+Show a sophisticated visual transformation:
+
+₹4,289
+        ↓
+₹1,999 + ₹1,999 + ₹291
+
+Make this transformation visual rather than looking like a mathematical textbook.
+
+MAIN VISUAL:
+A large amount enters from the left and intelligently separates into three clean payment blocks:
+₹1,999
+₹1,999
+₹291
+
+Use a modern segmented-arrow system to visually communicate splitting.
+
+BRANDING:
+Prominently but elegantly display:
+1999
+
+Optional short tagline:
+“Split Big Amounts. Pay Smarter.”
+
+STYLE:
+- Premium fintech
+- Modern Indian digital payment aesthetic
+- Clean
+- Minimal
+- High-end startup branding
+- Deep navy background
+- Electric blue
+- Cyan
+- Subtle green accent for the final smaller amount
+- Strong white typography
+
+COMPOSITION:
+Keep all important text and visual elements inside the central safe area.
+Keep decorative elements near the edges.
+
+Do NOT use:
+- Google Play logo
+- Play Store badge
+- Phone mockups
+- Coins
+- Currency notes
+- Generic bank imagery
+- QR codes
+- People
+- Hands
+- Excessive gradients
+- 3D effects
+- Fake awards
+- “#1”
+- “Best app”
+- Download counts
+- Ratings
+- Promotional discount claims
+
+The final graphic should immediately communicate:
+“Large amount → smart split → 1999-sized payments.”
+
+Professional fintech advertising quality.
+
+====================================================================
+Screenshot 1 — Main/Home Screen
+====================================================================
+Create a premium Google Play Store promotional screenshot for the fintech utility app “1999”.
+
+FORMAT:
+1080 × 1920 pixels
+Portrait 9:16
+
+IMPORTANT:
+Show a realistic ACTUAL APP UI, not a marketing poster.
+The UI should look like a real production-ready Android fintech application.
+
+SCREEN:
+Home / Split Amount
+
+Top:
+1999 logo
+Clean navigation
+Minimal professional header
+
+Main headline:
+“Split Any Amount”
+
+Supporting text:
+“Break large amounts into payments up to ₹1,999.”
+
+CENTER UI:
+A large amount input field showing:
+
+₹4,289
+
+Below it, a prominent button:
+“Split Amount”
+
+After calculation, show a clean result:
+
+₹1,999
++
+₹1,999
++
+₹291
+
+Use elegant cards/chips for each split amount.
+
+Show a subtle visual arrow indicating:
+₹4,289 → 1999 + 1999 + 291
+
+VISUAL STYLE:
+- Premium fintech
+- Deep navy / white interface
+- Electric blue accents
+- Cyan highlights
+- Subtle green success indicator
+- Rounded modern cards
+- Clean typography
+- Professional spacing
+- Minimal interface
+
+Add a small promotional headline outside the phone UI at the top:
+“Split Large Amounts. Easily.”
+
+Do not show hands.
+Do not show people.
+Do not show phone mockup.
+Do not show Google Play logo.
+Do not invent unrelated features.
+
+The screenshot must clearly show the actual app experience.
+
+====================================================================
+Screenshot 2 — Smart Split Result
+====================================================================
+Create a premium Google Play Store screenshot for the real fintech utility app “1999”.
+
+FORMAT:
+1080 × 1920 pixels
+Portrait 9:16
+
+Show the ACTUAL app interface.
+
+SCREEN:
+“Split Result”
+
+Input amount:
+₹8,497
+
+Show the automatically calculated split:
+
+₹1,999
+₹1,999
+₹1,999
+₹1,999
+₹501
+
+Clearly show:
+“5 Payments”
+
+Include a clean progress/summary area:
+
+Total Amount
+₹8,497
+
+Maximum per Payment
+₹1,999
+
+Payments Required
+5
+
+Use elegant fintech cards with subtle separation between each payment amount.
+
+Top branding:
+1999
+
+Promotional headline above the UI:
+“Automatically Split Your Amount”
+
+Supporting text:
+“Get clear payment amounts in seconds.”
+
+DESIGN:
+- Premium fintech
+- Modern Android UI
+- Deep navy
+- White
+- Electric blue
+- Cyan
+- Green for completed/calculated state
+- Clean geometric typography
+- Minimal
+- Professional
+
+No people.
+No hands.
+No coins.
+No QR code.
+No fake banking interface.
+No phone mockup.
+No unnecessary graphics.
+
+The result must look like a genuine production app screenshot.
+
+====================================================================
+Screenshot 3 — Payment Flow / Pay Now
+====================================================================
+Create a premium Google Play Store promotional screenshot for the fintech app “1999”.
+
+FORMAT:
+1080 × 1920 pixels
+Portrait 9:16
+
+Show the REALISTIC production UI of the app.
+
+SCREEN:
+“Payment 1 of 3”
+
+Total:
+₹4,289
+
+Split payments:
+
+✓ ₹1,999
+→ Pay Now
+
+○ ₹1,999
+○ ₹291
+
+Show a clean progress indicator:
+Payment 1 / 3
+
+Main CTA:
+“Pay ₹1,999”
+
+Secondary information:
+“Remaining: ₹2,290”
+
+The interface should communicate that the user can complete the split payments sequentially.
+
+Brand:
+1999
+
+Promotional headline:
+“Pay in Simple Steps”
+
+Supporting text:
+“Handle larger amounts with smaller payments.”
+
+VISUAL STYLE:
+Premium fintech Android application.
+Deep navy interface.
+White typography.
+Electric blue CTA.
+Cyan accents.
+Green success state.
+Rounded cards.
+Clean spacing.
+Professional typography.
+
+No people.
+No hands.
+No physical phone.
+No QR code unless it is genuinely part of the actual app screen.
+No unrelated banking features.
+No fake logos.
+
+Make it look like a real shipped fintech application.
+
+====================================================================
+Screenshot 4 — Clear Progress
+====================================================================
+Create a premium Google Play Store screenshot for the fintech utility application “1999”.
+
+FORMAT:
+1080 × 1920 pixels
+Portrait 9:16
+
+Show a realistic actual Android app interface.
+
+SCREEN:
+“Payment Progress”
+
+Original amount:
+₹7,285
+
+Split into:
+
+✓ ₹1,999 — Paid
+✓ ₹1,999 — Paid
+→ ₹1,999 — Ready to Pay
+○ ₹1,288 — Remaining
+
+Show a clean visual progress bar:
+2 of 4 payments completed
+
+Show:
+Total ₹7,285
+Paid ₹3,998
+Remaining ₹3,287
+
+Primary button:
+“Pay ₹1,999”
+
+Top branding:
+1999
+
+Promotional headline:
+“Stay On Track”
+
+Supporting text:
+“See every split payment at a glance.”
+
+DESIGN:
+Premium fintech.
+Minimal.
+Modern.
+Trustworthy.
+Deep navy.
+Electric blue.
+Cyan.
+Green success states.
+Clean cards.
+Excellent spacing.
+Bold readable typography.
+
+No people.
+No hands.
+No phone mockup.
+No Google Play branding.
+No coins.
+No generic banking graphics.
+No fake features.
+
+====================================================================
+Screenshot 5 — Example / How It Works
+====================================================================
+Create a premium Google Play Store promotional screenshot for the fintech utility app “1999”.
+
+FORMAT:
+1080 × 1920 pixels
+Portrait 9:16
+
+Create a realistic app onboarding / explanation screen.
+
+TITLE:
+“How 1999 Works”
+
+Show three simple steps:
+
+01
+Enter Amount
+₹4,289
+
+↓
+
+02
+Smart Split
+
+₹1,999
++
+₹1,999
++
+₹291
+
+↓
+
+03
+Pay Separately
+
+3 Payments
+
+Use clean visual connectors and simple geometric illustrations.
+
+Add concise supporting text:
+“Large amounts are automatically divided into smaller payments capped at ₹1,999.”
+
+Brand:
+1999
+
+STYLE:
+Premium fintech startup.
+Modern Indian digital-payment aesthetic.
+Deep navy.
+White.
+Electric blue.
+Cyan.
+Green accent.
+Minimal geometric design.
+Professional typography.
+Strong visual hierarchy.
+
+Keep the screen uncluttered.
+
+No people.
+No hands.
+No phone mockup.
+No Google Play logo.
+No coins.
+No currency notes.
+No generic banking imagery.
+
+The screen should feel like a real production Android app.
+
+====================================================================
+Screenshot 6 — Final CTA
+====================================================================
+Create a premium final Google Play Store screenshot for the fintech utility app “1999”.
+
+FORMAT:
+1080 × 1920 pixels
+Portrait 9:16
+
+Show the actual app interface with a clean final call-to-action screen.
+
+Large central example:
+
+₹12,498
+
+↓
+
+₹1,999
+₹1,999
+₹1,999
+₹1,999
+₹1,999
+₹1,999
+₹504
+
+Show a clear summary:
+“7 Payments”
+
+Main message:
+“Big Amount? Split It.”
+
+Supporting text:
+“Break large amounts into smaller payments up to ₹1,999.”
+
+Primary CTA:
+“Split Amount”
+
+Brand:
+1999
+
+Visual direction:
+- Premium fintech
+- Modern
+- Minimal
+- Strong geometric typography
+- Deep navy background
+- Electric blue
+- Cyan
+- Green accent
+- Clean rounded cards
+- High contrast
+- Excellent spacing
+
+No people.
+No hands.
+No phone mockup.
+No Google Play logo.
+No coins.
+No unnecessary financial imagery.
+
+The final result must look like a genuine high-quality Android fintech application screenshot, not an advertisement poster.
+
