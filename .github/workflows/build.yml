@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir -p android/app
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/splitpe-keystore.jks
-          echo "storeFile=app/splitpe-keystore.jks" > android/key.properties
+          echo "storeFile=splitpe-keystore.jks" > android/key.properties
           echo "storePassword=${{ secrets.STORE_PASSWORD }}" >> android/key.properties
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
           echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
