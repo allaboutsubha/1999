@@ -46,7 +46,7 @@ android {
     buildTypes {
         release {
             // ২. এখানে debug এর বদলে release সাইনিং কনফিগার বসাতে হবে
-            signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.getByName("debug")
             
             // রিলিজ বিল্ড ছোট ও সিকিউর করার জন্য মিনিফাই অন রাখতে পারো (অপশনাল)
             isMinifyEnabled = true
