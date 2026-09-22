@@ -22,23 +22,22 @@ jobs:
           flutter pub get
           dart run flutter_launcher_icons
       
-      - name: Create key.properties and Decode Keystore
+      - name: Decode Keystore
         run: |
           mkdir -p android/app
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/splitpe-keystore.jks
-          echo "storeFile=splitpe-keystore.jks" > android/app/key.properties
-          echo "storePassword=${{ secrets.STORE_PASSWORD }}" >> android/app/key.properties
-          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/app/key.properties
-          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/app/key.properties
-
-      - name: Verify key.properties exists
-        run: cat android/app/key.properties
 
       # ----------------------------------------------------
-      # প্লে স্টোরের জন্য AAB বিল্ড করার অংশ 
+      # প্লে স্টোরের জন্য AAB বিল্ড করার অংশ (সরাসরি সিক্রেট পাস করা হচ্ছে)
       # ----------------------------------------------------
       - name: Build App Bundle (AAB)
-        run: flutter build appbundle --release
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        run: |
+          flutter build appbundle --release \
+            --dart-define=KEYSTORE_PASSWORD="$KEYSTORE_PASSWORD"
 
       - name: Upload AAB Artifact
         uses: actions/upload-artifact@v4

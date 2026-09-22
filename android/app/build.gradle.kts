@@ -23,7 +23,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    // সাইনিং কনফিগারেশন (ডুপ্লিকেট ব্লক সরিয়ে একটি সঠিক ও নিরাপদ ব্লক রাখা হলো)
+    // সাইনিং কনফিগারেশন
     signingConfigs {
         create("release") {
             if (keystorePropertiesFile.exists() && keystoreProperties.getProperty("storeFile") != null) {
