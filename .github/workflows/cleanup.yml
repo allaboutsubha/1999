@@ -1,0 +1,117 @@
+name: Cleanup Old GitHub Actions Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      keep_runs:
+        description: "Number of recent workflow runs to keep per workflow"
+        required: true
+        default: "5"
+
+      delete_artifacts:
+        description: "Delete artifacts from old runs"
+        required: true
+        type: boolean
+        default: true
+
+      delete_runs:
+        description: "Delete old workflow runs"
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cleanup:
+    name: Cleanup old Actions data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cleanup old workflow runs and artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KEEP_RUNS: ${{ inputs.keep_runs }}
+          DELETE_ARTIFACTS: ${{ inputs.delete_artifacts }}
+          DELETE_RUNS: ${{ inputs.delete_runs }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+
+          echo "========================================="
+          echo " GitHub Actions Cleanup"
+          echo " Repository: $REPO"
+          echo " Keep runs: $KEEP_RUNS"
+          echo " Delete artifacts: $DELETE_ARTIFACTS"
+          echo " Delete runs: $DELETE_RUNS"
+          echo "========================================="
+
+          workflows=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/$REPO/actions/workflows" \
+            --paginate \
+            --jq '.workflows[].id')
+
+          for workflow_id in $workflows; do
+
+            echo ""
+            echo "-----------------------------------------"
+            echo "Processing workflow: $workflow_id"
+            echo "-----------------------------------------"
+
+            runs=$(gh api \
+              -H "Accept: application/vnd.github+json" \
+              "/repos/$REPO/actions/workflows/$workflow_id/runs?per_page=100" \
+              --paginate \
+              --jq '.workflow_runs[].id')
+
+            count=0
+
+            for run_id in $runs; do
+
+              count=$((count + 1))
+
+              if [ "$count" -le "$KEEP_RUNS" ]; then
+                echo "Keeping run: $run_id"
+                continue
+              fi
+
+              echo "Processing old run: $run_id"
+
+              if [ "$DELETE_ARTIFACTS" = "true" ]; then
+                artifacts=$(gh api \
+                  -H "Accept: application/vnd.github+json" \
+                  "/repos/$REPO/actions/runs/$run_id/artifacts?per_page=100" \
+                  --paginate \
+                  --jq '.artifacts[].id')
+
+                for artifact_id in $artifacts; do
+                  echo "Deleting artifact: $artifact_id"
+
+                  gh api \
+                    --method DELETE \
+                    -H "Accept: application/vnd.github+json" \
+                    "/repos/$REPO/actions/artifacts/$artifact_id" \
+                    || true
+                done
+              fi
+
+              if [ "$DELETE_RUNS" = "true" ]; then
+                echo "Deleting workflow run: $run_id"
+
+                gh api \
+                  --method DELETE \
+                  -H "Accept: application/vnd.github+json" \
+                  "/repos/$REPO/actions/runs/$run_id" \
+                  || true
+              fi
+
+            done
+          done
+
+          echo ""
+          echo "========================================="
+          echo " Cleanup completed"
+          echo "========================================="
